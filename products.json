@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Headphones Noise-Canceling X1",
+        "price": 299.00,
+        "image": "https://placehold.co/400x400/1A1A1A/FFFFFF?text=Headphones",
+        "rating": 4.8,
+        "category": "Eletrônicos"
+    },
+    {
+        "id": 2,
+        "name": "Smartwatch Minimalista",
+        "price": 199.50,
+        "image": "https://placehold.co/400x400/0df2df/1A1A1A?text=Smartwatch",
+        "rating": 4.5,
+        "category": "Acessórios"
+    },
+    {
+        "id": 3,
+        "name": "Cadeira Ergonômica Pro",
+        "price": 899.90,
+        "image": "https://placehold.co/400x400/F8F9FA/1A1A1A?text=Cadeira",
+        "rating": 4.9,
+        "category": "Escritório"
+    },
+    {
+        "id": 4,
+        "name": "Luminária de Mesa LED",
+        "price": 129.00,
+        "image": "https://placehold.co/400x400/13ec78/000000?text=Luminaria",
+        "rating": 4.7,
+        "category": "Decoração"
+    }
+]

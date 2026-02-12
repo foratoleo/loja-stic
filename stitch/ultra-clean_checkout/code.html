@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ultra-Clean Checkout</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2D65F8",
+                        "primary-dark": "#1A4BD3", 
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#102221",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2e2d",
+                        "border-light": "#e2e8e8",
+                        "border-dark": "#2a403e",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }.custom-radio:checked {
+            background-color: #2D65F8;
+            border-color: #2D65F8;
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+        }
+        .custom-radio:checked + div {
+            border-color: #2D65F8;
+            background-color: rgba(45, 101, 248, 0.05);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-100 antialiased min-h-screen flex justify-center">
+<div class="w-full max-w-md bg-background-light dark:bg-background-dark min-h-screen relative flex flex-col shadow-2xl">
+<header class="sticky top-0 z-50 bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-md border-b border-border-light dark:border-border-dark px-6 py-4">
+<div class="flex items-center justify-between mb-4">
+<button class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors">
+<span class="material-icons">arrow_back</span>
+</button>
+<h1 class="text-lg font-semibold tracking-tight">Checkout</h1>
+<button class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors">
+<span class="material-icons text-sm">help_outline</span>
+</button>
+</div>
+<div class="flex items-center space-x-2">
+<div class="flex-1">
+<div class="h-1 w-full bg-primary rounded-full"></div>
+<p class="text-xs font-medium text-primary mt-1">Delivery</p>
+</div>
+<div class="flex-1">
+<div class="h-1 w-full bg-primary/30 dark:bg-primary/20 rounded-full"></div>
+<p class="text-xs font-medium text-slate-400 mt-1">Payment</p>
+</div>
+<div class="flex-1">
+<div class="h-1 w-full bg-slate-200 dark:bg-slate-700 rounded-full"></div>
+<p class="text-xs font-medium text-slate-400 mt-1">Review</p>
+</div>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto px-6 pt-4 pb-32 no-scrollbar">
+<details class="group bg-surface-light dark:bg-surface-dark rounded-xl border border-border-light dark:border-border-dark mb-6 overflow-hidden transition-all duration-300">
+<summary class="flex items-center justify-between p-4 cursor-pointer list-none select-none">
+<div class="flex items-center gap-3">
+<div class="bg-primary/10 p-2 rounded-lg">
+<span class="material-icons text-primary text-xl">shopping_bag</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-semibold">Order Summary</span>
+<span class="text-xs text-slate-500 dark:text-slate-400">3 items • R$ 145,90</span>
+</div>
+</div>
+<span class="material-icons text-slate-400 transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-0 border-t border-border-light dark:border-border-dark">
+<div class="space-y-3 mt-3">
+<div class="flex justify-between text-sm">
+<span class="text-slate-600 dark:text-slate-300">Premium Dog Food (10kg)</span>
+<span class="font-medium">R$ 120,00</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-slate-600 dark:text-slate-300">Squeaky Toy</span>
+<span class="font-medium">R$ 15,90</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-slate-600 dark:text-slate-300">Dental Chews</span>
+<span class="font-medium">R$ 10,00</span>
+</div>
+</div>
+</div>
+</details>
+<section class="mb-8">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-base font-semibold text-slate-900 dark:text-white">Where should we send this?</h2>
+<button class="text-primary text-sm font-medium hover:text-primary-dark">Add New</button>
+</div>
+<div class="space-y-3">
+<label class="relative block cursor-pointer group">
+<input checked="" class="peer sr-only" name="address" type="radio"/>
+<div class="p-4 rounded-xl border-2 border-primary bg-surface-light dark:bg-surface-dark transition-all shadow-sm ring-0 peer-checked:bg-primary/5">
+<div class="flex items-start gap-3">
+<div class="mt-1">
+<div class="w-5 h-5 rounded-full border-2 border-primary flex items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+</div>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<span class="font-semibold text-slate-900 dark:text-white text-sm">Home</span>
+<span class="bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded-full">DEFAULT</span>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-snug">
+                                        Rua das Flores, 123 - Apt 402<br/>
+                                        Jardim Paulista, São Paulo - SP
+                                    </p>
+</div>
+</div>
+</div>
+</label>
+<label class="relative block cursor-pointer group">
+<input class="peer sr-only" name="address" type="radio"/>
+<div class="p-4 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark transition-all hover:border-primary/50 shadow-sm peer-checked:border-primary peer-checked:bg-primary/5">
+<div class="flex items-start gap-3">
+<div class="mt-1">
+<div class="w-5 h-5 rounded-full border-2 border-slate-300 dark:border-slate-600 flex items-center justify-center peer-checked:border-primary">
+<div class="w-2.5 h-2.5 rounded-full bg-primary opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+</div>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<span class="font-semibold text-slate-900 dark:text-white text-sm">Work</span>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-snug">
+                                        Av. Paulista, 1000 - 15º Andar<br/>
+                                        Bela Vista, São Paulo - SP
+                                    </p>
+</div>
+</div>
+</div>
+</label>
+</div>
+</section>
+<section>
+<h2 class="text-base font-semibold text-slate-900 dark:text-white mb-4">How would you like to pay?</h2>
+<div class="flex space-x-3 overflow-x-auto pb-4 no-scrollbar -mx-6 px-6 mb-4">
+<label class="cursor-pointer shrink-0">
+<input class="peer sr-only" name="payment_method" type="radio" value="pix"/>
+<div class="w-28 h-24 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark flex flex-col items-center justify-center gap-2 transition-all peer-checked:border-primary peer-checked:bg-primary/5 peer-checked:shadow-md">
+<span class="material-icons text-primary text-2xl">qr_code_2</span>
+<span class="text-xs font-semibold">Pix</span>
+<span class="text-[10px] text-primary bg-blue-100 px-1.5 py-0.5 rounded">-5% OFF</span>
+</div>
+</label>
+<label class="cursor-pointer shrink-0">
+<input checked="" class="peer sr-only" name="payment_method" type="radio" value="cc"/>
+<div class="w-28 h-24 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark flex flex-col items-center justify-center gap-2 transition-all peer-checked:border-primary peer-checked:bg-primary/5 peer-checked:shadow-md">
+<span class="material-icons text-slate-700 dark:text-slate-200 text-2xl">credit_card</span>
+<span class="text-xs font-semibold">Credit Card</span>
+</div>
+</label>
+<label class="cursor-pointer shrink-0">
+<input class="peer sr-only" name="payment_method" type="radio" value="boleto"/>
+<div class="w-28 h-24 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark flex flex-col items-center justify-center gap-2 transition-all peer-checked:border-primary peer-checked:bg-primary/5 peer-checked:shadow-md">
+<span class="material-icons text-slate-700 dark:text-slate-200 text-2xl">receipt_long</span>
+<span class="text-xs font-semibold">Boleto</span>
+</div>
+</label>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl border border-border-light dark:border-border-dark p-5 shadow-sm space-y-4 animate-fade-in">
+<div class="flex items-center justify-between mb-2">
+<h3 class="text-sm font-semibold">Card Details</h3>
+<div class="flex gap-2">
+<div class="w-8 h-5 bg-slate-200 rounded"></div>
+<div class="w-8 h-5 bg-slate-200 rounded"></div>
+</div>
+</div>
+<div>
+<label class="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">Card Number</label>
+<div class="relative">
+<input class="w-full bg-background-light dark:bg-background-dark border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="0000 0000 0000 0000" type="text"/>
+<span class="material-icons absolute right-3 top-3 text-slate-400 text-sm">lock</span>
+</div>
+</div>
+<div>
+<label class="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">Cardholder Name</label>
+<input class="w-full bg-background-light dark:bg-background-dark border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="Name as on card" type="text"/>
+</div>
+<div class="flex gap-4">
+<div class="flex-1">
+<label class="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">Expiry</label>
+<input class="w-full bg-background-light dark:bg-background-dark border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="MM/YY" type="text"/>
+</div>
+<div class="flex-1">
+<label class="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1 flex items-center gap-1">
+                                CVV <span class="material-icons text-[10px] text-slate-400 cursor-help">help</span>
+</label>
+<input class="w-full bg-background-light dark:bg-background-dark border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="123" type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<input class="rounded border-slate-300 text-primary focus:ring-primary" id="save-card" type="checkbox"/>
+<label class="text-xs text-slate-600 dark:text-slate-300" for="save-card">Save card securely for future purchases</label>
+</div>
+</div>
+</section>
+</main>
+<footer class="absolute bottom-0 left-0 w-full bg-surface-light dark:bg-surface-dark border-t border-border-light dark:border-border-dark px-6 py-5 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] z-40">
+<div class="flex items-center justify-between mb-4">
+<span class="text-sm text-slate-500 dark:text-slate-400">Total to pay</span>
+<div class="flex flex-col items-end">
+<span class="text-xl font-bold text-slate-900 dark:text-white">R$ 145,90</span>
+<span class="text-[10px] text-primary dark:text-blue-400 font-medium">Free Shipping applied</span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/25 transition-all transform active:scale-[0.98] flex items-center justify-center gap-2">
+<span class="material-icons text-sm">lock</span>
+                Finish Order
+            </button>
+</footer>
+</div>
+
+</body></html>

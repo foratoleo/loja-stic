@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sleek Product Details - Modern Blue</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                colors: {"primary": "#3B82F6", 
+                    "primary-dark": "#2563EB",
+                    "background-light": "#f8fafc","background-dark": "#0f172a",},
+                fontFamily: {
+                    "display": ["Inter", "sans-serif"]
+                },
+                borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }.safe-pb {
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-100 antialiased selection:bg-primary selection:text-white">
+<div class="max-w-md mx-auto min-h-screen bg-white dark:bg-[#1e293b] shadow-2xl relative flex flex-col pb-24">
+<header class="fixed top-0 max-w-md w-full z-50 bg-white/90 dark:bg-[#1e293b]/90 backdrop-blur-md px-4 py-3 flex justify-between items-center border-b border-slate-100 dark:border-white/5">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-50 dark:hover:bg-white/10 transition-colors">
+<span class="material-icons text-slate-800 dark:text-white">arrow_back</span>
+</button>
+<h1 class="text-sm font-semibold tracking-wide uppercase text-slate-500 dark:text-slate-400">Details</h1>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-50 dark:hover:bg-white/10 transition-colors relative">
+<span class="material-icons text-slate-800 dark:text-white">shopping_bag</span>
+<span class="absolute top-2 right-2 w-2.5 h-2.5 bg-primary rounded-full border-2 border-white dark:border-[#1e293b]"></span>
+</button>
+</header>
+<main class="flex-grow pt-16">
+<div class="relative w-full h-[380px] bg-slate-50 dark:bg-white/5 mb-6 group">
+<img alt="Sleek modern smart pet collar on minimalistic background" class="w-full h-full object-cover object-center" data-alt="Sleek modern smart pet collar on minimalistic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTS7LrxSTvUbqDkrtlWqCiwILI-2QAlNRVDM1jh6px9OsKjO7OSj0NDy78r7ThRv3ZIbwS84J5zbIB3yof2uPyEC-AccJS8E_rtN_aEAiSTO2mMpWH2x0juVlqNvQGmtphZEunKgWIaNYlX625VhtLk5eIHG3CEx470w71jauqZ1E9P2DAGnD7yb3uldQDFrPlZjDhhxphvnJoaNd47TteeeyfdnA66R2Q4pCIraMw5191SiZWXI_aXV_PPdx9f_HutcRB74c27l6R"/>
+<div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary shadow-sm"></div>
+<div class="w-2 h-2 rounded-full bg-black/20 dark:bg-white/20"></div>
+<div class="w-2 h-2 rounded-full bg-black/20 dark:bg-white/20"></div>
+<div class="w-2 h-2 rounded-full bg-black/20 dark:bg-white/20"></div>
+</div>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 dark:bg-black/40 backdrop-blur rounded-full flex items-center justify-center shadow-sm hover:text-primary transition-colors">
+<span class="material-icons text-slate-400 text-xl">favorite_border</span>
+</button>
+</div>
+<div class="px-5 space-y-6">
+<div class="space-y-2">
+<div class="flex items-center gap-1">
+<span class="material-icons text-yellow-400 text-sm">star</span>
+<span class="text-sm font-medium text-slate-800 dark:text-slate-100">4.8</span>
+<span class="text-sm text-slate-400 ml-1">(128 reviews)</span>
+</div>
+<h2 class="text-2xl font-bold leading-tight text-slate-900 dark:text-white">Smart GPS Pet Tracker Series 5</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Waterproof, long battery life, real-time tracking.</p>
+</div>
+<div class="flex items-end gap-3">
+<span class="text-3xl font-bold text-slate-900 dark:text-white">$45.00</span>
+<span class="text-lg text-slate-400 line-through mb-1">$50.00</span>
+<span class="mb-1 px-2 py-0.5 bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-200 text-xs font-bold uppercase tracking-wide rounded">10% Off</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-sm font-semibold text-slate-900 dark:text-white">Purchase Options</h3>
+<label class="relative flex items-start p-4 cursor-pointer rounded-xl border-2 border-primary bg-primary/5 dark:bg-primary/10 transition-all shadow-sm ring-1 ring-primary/20">
+<input checked="" class="mt-1 h-4 w-4 text-primary border-slate-300 focus:ring-primary" name="purchase_type" type="radio"/>
+<div class="ml-3 flex-1">
+<div class="flex justify-between items-center mb-1">
+<span class="block text-sm font-bold text-slate-900 dark:text-white">Subscribe &amp; Save</span>
+<span class="text-sm font-bold text-slate-900 dark:text-white">$45.00</span>
+</div>
+<p class="text-xs text-slate-500 dark:text-slate-400 mb-3">Best value. Save 10% on every order.</p>
+<div class="flex items-center gap-2">
+<span class="text-xs text-slate-500 dark:text-slate-400">Deliver every:</span>
+<select class="text-xs py-1 pl-2 pr-7 border-slate-200 dark:border-white/10 rounded bg-white dark:bg-white/5 focus:border-primary focus:ring-0 text-slate-700 dark:text-slate-200">
+<option>2 Weeks</option>
+<option selected="">4 Weeks</option>
+<option>8 Weeks</option>
+</select>
+</div>
+</div>
+<div class="absolute -top-3 right-4 bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider shadow-md">
+                            Most Popular
+                        </div>
+</label>
+<label class="relative flex items-center p-4 cursor-pointer rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 hover:border-slate-300 transition-all">
+<input class="h-4 w-4 text-slate-400 border-slate-300 focus:ring-primary" name="purchase_type" type="radio"/>
+<div class="ml-3 flex-1 flex justify-between">
+<span class="block text-sm font-medium text-slate-700 dark:text-slate-300">One-time purchase</span>
+<span class="text-sm font-medium text-slate-700 dark:text-slate-300">$50.00</span>
+</div>
+</label>
+</div>
+<div class="pt-2">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-icons text-slate-400 text-sm">local_shipping</span>
+<span class="text-sm font-medium text-slate-900 dark:text-white">Calculate Shipping</span>
+</div>
+<div class="flex gap-2">
+<input class="flex-1 bg-slate-50 dark:bg-white/5 border-slate-200 dark:border-white/10 rounded-lg text-sm px-3 py-2 focus:ring-primary focus:border-primary placeholder-slate-400" placeholder="Zip Code" type="text"/>
+<button class="px-4 py-2 bg-slate-900 dark:bg-white text-white dark:text-black text-sm font-medium rounded-lg hover:bg-slate-800 transition-colors">Calculate</button>
+</div>
+<p class="mt-2 text-xs text-blue-600 dark:text-blue-400 flex items-center gap-1">
+<span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
+                        Free delivery to <span class="font-semibold underline decoration-dotted">90210</span> by Tuesday, Oct 24
+                    </p>
+</div>
+<div class="border-t border-slate-100 dark:border-white/5 pt-2">
+<details class="group py-4 border-b border-slate-100 dark:border-white/5">
+<summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-900 dark:text-white hover:text-primary transition-colors">
+<span>Description</span>
+<span class="transition group-open:rotate-180">
+<span class="material-icons text-slate-400">expand_more</span>
+</span>
+</summary>
+<div class="text-slate-500 dark:text-slate-400 text-sm mt-3 leading-relaxed group-open:animate-fadeIn">
+                            Track your pet in real-time with unlimited range. The Series 5 features enhanced GPS accuracy, activity monitoring, and a lightweight design perfect for cats and dogs of all sizes.
+                        </div>
+</details>
+<details class="group py-4 border-b border-slate-100 dark:border-white/5">
+<summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-900 dark:text-white hover:text-primary transition-colors">
+<span>Technical Specifications</span>
+<span class="transition group-open:rotate-180">
+<span class="material-icons text-slate-400">expand_more</span>
+</span>
+</summary>
+<div class="text-slate-500 dark:text-slate-400 text-sm mt-3 leading-relaxed">
+<ul class="list-disc pl-4 space-y-1">
+<li>Battery: Up to 7 days</li>
+<li>Waterproof: IPX7 Certified</li>
+<li>Connectivity: LTE-M, NB-IoT</li>
+<li>Weight: 28g</li>
+</ul>
+</div>
+</details>
+<details class="group py-4 border-b border-slate-100 dark:border-white/5">
+<summary class="flex justify-between items-center font-medium cursor-pointer list-none text-slate-900 dark:text-white hover:text-primary transition-colors">
+<span>What's in the box</span>
+<span class="transition group-open:rotate-180">
+<span class="material-icons text-slate-400">expand_more</span>
+</span>
+</summary>
+<div class="text-slate-500 dark:text-slate-400 text-sm mt-3 leading-relaxed">
+                            1x Smart Tracker, 1x Charging Cable, 2x Silicone Clips, Quick Start Guide.
+                        </div>
+</details>
+</div>
+<div class="h-8"></div>
+</div>
+</main>
+<div class="fixed bottom-0 max-w-md w-full bg-white dark:bg-[#1e293b] border-t border-slate-100 dark:border-white/5 p-4 z-40 safe-pb shadow-[0_-5px_20px_rgba(0,0,0,0.05)]">
+<div class="flex gap-4">
+<div class="hidden sm:block">
+<p class="text-xs text-slate-400">Total Price</p>
+<p class="text-xl font-bold text-slate-900 dark:text-white">$45.00</p>
+</div>
+<button class="flex-1 bg-primary hover:bg-primary-dark transition-colors text-white font-bold text-base py-3.5 px-6 rounded-xl shadow-lg shadow-blue-500/30 flex items-center justify-center gap-2">
+<span class="material-icons text-lg">shopping_cart</span>
+                    Add to Cart
+                </button>
+</div>
+</div>
+</div>
+
+</body></html>

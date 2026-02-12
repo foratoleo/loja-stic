@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Loja Minimalista - Experiência de compra moderna e fluida."
+    />
+    <title>Loja Minimalista</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Project Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="main-header">
+      <div class="container header-content">
+        <a href="/" class="logo"> <span class="logo-symbol">L</span>oja </a>
+
+        <div class="search-bar">
+          <i class="ph ph-magnifying-glass"></i>
+          <input type="text" placeholder="Buscar produtos..." />
+        </div>
+
+        <nav class="nav-actions">
+          <button class="icon-btn cart-btn">
+            <i class="ph ph-shopping-cart"></i>
+            <span class="badge" id="cart-count">0</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Descubra o Futuro do Minimalismo.</h1>
+        <p>Design premium e funcionalidade em cada detalhe.</p>
+        <a href="#products" class="btn btn-primary">Ver Coleção</a>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Destaques</h2>
+          <div class="filters">
+            <button class="filter-btn active">Todos</button>
+            <button class="filter-btn">Novidades</button>
+            <button class="filter-btn">Ofertas</button>
+          </div>
+        </header>
+
+        <div class="products-grid" id="products-grid">
+          <!-- Products will be injected here via JS -->
+          <div class="product-card skeleton"></div>
+          <div class="product-card skeleton"></div>
+          <div class="product-card skeleton"></div>
+          <div class="product-card skeleton"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container footer-content">
+        <p>&copy; 2024 Loja Minimalista. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

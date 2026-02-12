@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Streamlined Shopping Cart</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3b82f6","primary-dark": "#2563eb","background-light": "#f5f8f8",
+                        "background-dark": "#101622","surface-light": "#ffffff",
+                        "surface-dark": "#161e2e",},
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-100 min-h-screen flex flex-col items-center justify-center p-4 sm:p-0">
+<div class="w-full max-w-md h-[850px] bg-background-light dark:bg-background-dark sm:border sm:border-gray-200 dark:sm:border-gray-800 sm:rounded-2xl relative overflow-hidden flex flex-col shadow-2xl">
+<header class="flex items-center justify-between px-6 pt-12 pb-4 bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-md sticky top-0 z-20 border-b border-gray-100 dark:border-gray-800/50">
+<button class="p-2 -ml-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+<span class="material-icons text-gray-800 dark:text-white">chevron_left</span>
+</button>
+<h1 class="text-lg font-semibold tracking-tight">My Cart</h1>
+<button class="p-2 -mr-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors relative">
+<span class="material-icons text-gray-800 dark:text-white">more_horiz</span>
+</button>
+</header>
+<main class="flex-1 overflow-y-auto no-scrollbar px-6 pb-32">
+<div class="mt-6 mb-8">
+<div class="flex justify-between items-end mb-2">
+<p class="text-sm font-medium text-gray-600 dark:text-gray-300">
+                        You're <span class="text-gray-900 dark:text-white font-bold">$12.00</span> away from free shipping!
+                    </p>
+<span class="material-icons text-primary text-sm animate-bounce">local_shipping</span>
+</div>
+<div class="h-2 w-full bg-blue-100 dark:bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-3/4 rounded-full shadow-[0_0_10px_rgba(59,130,246,0.5)]"></div>
+</div>
+</div>
+<div class="space-y-6">
+<div class="group relative flex gap-4 bg-surface-light dark:bg-surface-dark p-4 rounded-xl border border-transparent hover:border-blue-100 dark:hover:border-gray-700 transition-all shadow-sm">
+<div class="w-20 h-20 shrink-0 bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden relative">
+<img alt="Premium dog food bag packaging" class="w-full h-full object-cover mix-blend-multiply dark:mix-blend-normal" data-alt="Premium dog food bag packaging" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVUWSgi_i5Yiuz9Uq-8ZOIxqSVx-x9yhbUCYC8I5qEGvS35MwLXRwwUv8PzmDOfBTnDP5IJ69yBacO1qjjyuAw__QQ7SXgWoYGSgx-igf6W95AKq5-NSkeSXqECKowGu6eUJbX2yVXnV9y_-fypyTjWjrWaj9us4uGjhjKEFu_5rP3zCFyjVKxNP_ghvCcMGz3gUm8ACuluSim4ZQoreIRnzGFH0kMItSKm9Dm9-bgsWRu4jZ4lt30g52SkBH1W-lWQWaLCqUGM_rI"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-medium text-gray-900 dark:text-white leading-tight pr-4">Premium Dog Food - Chicken &amp; Rice</h3>
+<button class="text-gray-400 hover:text-red-500 transition-colors">
+<span class="material-icons text-lg">close</span>
+</button>
+</div>
+<p class="text-xs text-gray-500 dark:text-gray-400 mt-1">10kg • Adult</p>
+</div>
+<div class="flex justify-between items-end mt-2">
+<span class="font-bold text-gray-900 dark:text-white">$45.00</span>
+<div class="flex items-center gap-3 bg-gray-50 dark:bg-gray-800 rounded-lg px-2 py-1 border border-gray-100 dark:border-gray-700">
+<button class="w-6 h-6 flex items-center justify-center rounded-md hover:bg-white dark:hover:bg-gray-600 transition-colors text-gray-500">
+<span class="material-icons text-sm">remove</span>
+</button>
+<span class="text-sm font-medium w-4 text-center">1</span>
+<button class="w-6 h-6 flex items-center justify-center rounded-md hover:bg-white dark:hover:bg-gray-600 transition-colors text-gray-900 dark:text-white">
+<span class="material-icons text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative flex gap-4 bg-surface-light dark:bg-surface-dark p-4 rounded-xl border border-transparent hover:border-blue-100 dark:hover:border-gray-700 transition-all shadow-sm">
+<div class="w-20 h-20 shrink-0 bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden relative">
+<img alt="Colorful cat toy feathers" class="w-full h-full object-cover mix-blend-multiply dark:mix-blend-normal" data-alt="Colorful cat toy feathers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBizSr5WcePzHtOkcjnrVeIkOaxpBN367O9EcYV2mNEbi5DZR-kXlrpSdi-Df6peRihzK7zCfAKxVjk_4xXlj614drKaPtPlzpUojlSMQMqZNsFurSnr-q7yxYKtiaRGbBf8uzPJbnzCfMsC0SJC_WqiUPjU4mhZU0fn_bvFlqsmPQbsnkhSPT_a-p6uxua_GH_T9KnbNWp3FO6Yst1X6lVzvDD37jCVZ9O1t2_CdshLKWfIcFYZ9fR4YzvU8-isVRBN-hd2yonox5G"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-medium text-gray-900 dark:text-white leading-tight pr-4">Interactive Feather Cat Toy</h3>
+<button class="text-gray-400 hover:text-red-500 transition-colors">
+<span class="material-icons text-lg">close</span>
+</button>
+</div>
+<p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Multi-color</p>
+</div>
+<div class="flex justify-between items-end mt-2">
+<span class="font-bold text-gray-900 dark:text-white">$15.00</span>
+<div class="flex items-center gap-3 bg-gray-50 dark:bg-gray-800 rounded-lg px-2 py-1 border border-gray-100 dark:border-gray-700">
+<button class="w-6 h-6 flex items-center justify-center rounded-md hover:bg-white dark:hover:bg-gray-600 transition-colors text-gray-900 dark:text-white">
+<span class="material-icons text-sm">remove</span>
+</button>
+<span class="text-sm font-medium w-4 text-center">2</span>
+<button class="w-6 h-6 flex items-center justify-center rounded-md hover:bg-white dark:hover:bg-gray-600 transition-colors text-gray-900 dark:text-white">
+<span class="material-icons text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative flex gap-4 bg-surface-light dark:bg-surface-dark p-4 rounded-xl border border-transparent hover:border-blue-100 dark:hover:border-gray-700 transition-all shadow-sm opacity-90">
+<div class="w-20 h-20 shrink-0 bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden relative border border-primary/30">
+<img alt="Bag of dog treats" class="w-full h-full object-cover mix-blend-multiply dark:mix-blend-normal" data-alt="Bag of dog treats" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP3WT7ikQHfefTND60uhzj7hY5Cy7ftkBeCh-SFKjWuoAX6sAxbAfM7iCuRcXQbYGiyt2nZCpATcZPBM7lH6H3ekHK3oAhop1nZODyUF_crs0XwIA0ghcnBKiOtP0cjv6auubH8nynPNvyZXE-eCx_5Jjb1PZwt2HBgc-1a2iUd9_8C6lJUJ0XUeYctNfrUOatWjL7XbYaF3hjqn7TxdYjf74BDjKHUR8-KMB8QEWh79xmeo_FXUMX-9-7XRP5C32Cbl3F8Rz5cV5q"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-medium text-gray-900 dark:text-white leading-tight pr-4">Organic Dog Treats</h3>
+<button class="text-gray-400 hover:text-red-500 transition-colors">
+<span class="material-icons text-lg">close</span>
+</button>
+</div>
+<div class="flex items-center gap-1 mt-1">
+<span class="bg-primary/10 text-primary-dark dark:text-blue-300 text-[10px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider">Free Gift</span>
+</div>
+</div>
+<div class="flex justify-between items-end mt-2">
+<span class="font-bold text-primary dark:text-primary">$0.00</span>
+<span class="text-xs text-gray-400">Qty: 1</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 bg-blue-50/50 dark:bg-surface-dark rounded-xl p-4 border border-primary/20 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary-dark dark:text-primary">
+<span class="material-icons">card_giftcard</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-gray-900 dark:text-white">Loyalty Rewards</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">You'll earn <span class="text-primary-dark dark:text-primary font-bold">+60 points</span> with this order.</p>
+</div>
+</div>
+<div class="mt-8 space-y-3 pb-8">
+<div class="flex justify-between text-sm text-gray-500 dark:text-gray-400">
+<span>Subtotal</span>
+<span class="text-gray-900 dark:text-white font-medium">$75.00</span>
+</div>
+<div class="flex justify-between text-sm text-gray-500 dark:text-gray-400">
+<span>Shipping</span>
+<span class="text-gray-900 dark:text-white font-medium">$5.00</span>
+</div>
+<div class="flex justify-between text-sm text-primary dark:text-primary">
+<span>Discount</span>
+<span class="font-medium">-$0.00</span>
+</div>
+<div class="h-px bg-gray-200 dark:bg-gray-800 my-4"></div>
+<div class="flex justify-between items-end">
+<span class="text-base font-semibold text-gray-900 dark:text-white">Total</span>
+<span class="text-2xl font-bold text-gray-900 dark:text-white tracking-tight">$80.00</span>
+</div>
+</div>
+</main>
+<div class="absolute bottom-0 left-0 right-0 bg-surface-light dark:bg-surface-dark border-t border-gray-100 dark:border-gray-800 p-6 z-30 pb-8 sm:pb-6 rounded-b-2xl shadow-[0_-5px_20px_rgba(0,0,0,0.02)]">
+<button class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all transform active:scale-[0.98] shadow-[0_4px_14px_rgba(59,130,246,0.4)]">
+<span>Proceed to Checkout</span>
+<span class="text-sm font-semibold opacity-90">($80.00)</span>
+<span class="material-icons text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+
+</body></html>
